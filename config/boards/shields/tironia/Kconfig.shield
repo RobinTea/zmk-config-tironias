@@ -1,6 +1,2 @@
-if SHIELD_TIRONIA
-
-config ZMK_KEYBOARD_NAME
-    default "Tironia"
-
-endif
+config SHIELD_TIRONIA
+    def_bool $(shields_list_contains,Tironia)
